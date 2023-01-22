@@ -20,11 +20,11 @@ export default function Home({ hadiths }) {
   return (
     <>
       <div>Hello Contentful process</div>
-      <div>
+      <div className="text-[24px] leading-8 text-right tracking-wide">
         {" "}
         Hadiths go here
         {hadiths.map((hadith) => {
-          return <p key={hadith.sys.id}>{hadith.fields.arabic_matn}</p>;
+          return <p className="my-4 font-serif" key={hadith.sys.id}>{hadith.fields.arabic_matn}</p>;
         })}
       </div>
     </>
